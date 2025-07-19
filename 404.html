@@ -1,0 +1,15 @@
+<html>
+
+<head>
+    <meta http-equiv="refresh" content="0; url=/Moviesearch/" />
+</head>
+
+<body>
+    <script>
+        const redirectPath = sessionStorage.redirect || "/login";
+        sessionStorage.removeItem("redirect");
+        location.replace("/Moviesearch#" + redirectPath);
+    </script>
+</body>
+
+</html>
